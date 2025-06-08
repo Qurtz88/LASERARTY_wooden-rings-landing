@@ -6,10 +6,10 @@
     <title>Деревянные кольца для макраме и ловцов снов</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #fffdf5;
             color: #333;
         }
 
@@ -20,31 +20,17 @@
             text-align: center;
         }
 
-        nav {
-            background-color: #e5d6c2;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: auto;
             padding: 20px;
         }
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
-        h1, h2 {
+        h2 {
             color: #6c4f3d;
         }
 
@@ -53,17 +39,24 @@
             padding-left: 20px;
         }
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #e67e22;
         }
 
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            object-fit: cover;
+        a.button {
+            display: inline-block;
+            background-color: #6c4f3d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        a.button:hover {
+            background-color: #5a3f2b;
         }
 
         footer {
@@ -71,12 +64,12 @@
             color: white;
             text-align: center;
             padding: 15px;
+            font-size: 0.9em;
         }
 
         @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                gap: 10px;
+            .container {
+                padding: 10px;
             }
         }
     </style>
@@ -85,16 +78,8 @@
 
 <header>
     <h1>Деревянные кольца для макраме и ловцов снов</h1>
-    <p>Набор из 12 штук — ваш идеальный помощник в творчестве</p>
+    <p>Набор из 12 штук разного диаметра — ваш идеальный помощник в творчестве</p>
 </header>
-
-<nav>
-    <a href="#product">О продукте</a>
-    <a href="#uses">Где использовать</a>
-    <a href="#advantages">Преимущества</a>
-    <a href="#buy">Купить</a>
-    <a href="#faq">FAQ</a>
-</nav>
 
 <div class="container">
 
@@ -106,14 +91,21 @@
             <li><strong>Размеры:</strong> от 59 мм до 235 мм в диаметре</li>
             <li><strong>Ширина кольца:</strong> 8 мм</li>
             <li><strong>Количество:</strong> 12 штук в наборе</li>
+            <li><strong>Универсальность:</strong> подходят для макраме, вязания, создания абажуров, ловцов снов и декора</li>
         </ul>
+        <div class="price">
+            Цена: 
+            <span class="price-block__wallet-price red-price" data-link="{on 'click' premiumPromoPopup}class{merge: promoWalletSale && promoWalletSale > 0 && ~wbSettings.walletTypeCode > 0 && enabledPremium toggle='price-block__wallet-price--pointer'}" data-jsv="#1203^/1203^">296&nbsp;₽</span>
+        </div>
+        <a href="https://www.wildberries.ru/catalog/148131749/detail.aspx?targetUrl=MI" target="_blank" class="button">Купить на Wildberries</a>
+        <p style="margin-top: 10px;"><strong>Артикул:</strong> 148131749</p>
     </section>
 
     <section id="uses">
         <h2>🎨 Где использовать?</h2>
         <ul>
-            <li><strong>💫 Макраме:</strong> создавайте стильные панно, абажуры и кашпо.</li>
-            <li><strong>🧵 Вязание:</strong> удобная основа для объемного вязания.</li>
+            <li><strong>💫 Макраме:</strong> создавайте стильные панно, абажуры и подвесные кашпо.</li>
+            <li><strong>🧵 Вязание:</strong> используйте кольца как основу для объёмного вязания.</li>
             <li><strong>🕊️ Ловцы снов:</strong> сделайте уникальный оберег своими руками.</li>
             <li><strong>🎉 Декор и подарки:</strong> украшайте интерьер, делайте открытки и авторские подарки.</li>
         </ul>
@@ -132,39 +124,13 @@
 
     <section id="gallery">
         <h2>🖼️ Фото товаров</h2>
-        <div class="gallery">
-            <img src="ring1.jpg" alt="Кольцо 1">
-            <img src="ring2.jpg" alt="Кольцо 2">
-            <img src="ring3.jpg" alt="Ловец снов">
-            <img src="ring4.jpg" alt="Абажур из колец">
-        </div>
-    </section>
-
-    <section id="buy">
-        <h2>🛒 Где купить?</h2>
-        <p><strong>Wildberries:</strong> <a href="https://www.wildberries.ru/"  target="_blank">Перейти на страницу товара</a></p>
-        <p>💰 Цена со скидкой: 313 ₽</p>
-        <p>📦 Бесплатная доставка при заказе от 500 ₽</p>
-        <p>⭐ Рейтинг: 4.9 / 112 отзывов</p>
-    </section>
-
-    <section id="faq">
-        <h2>❓ Часто задаваемые вопросы</h2>
-        <p><strong>Для чего нужны деревянные кольца?</strong><br>
-        Они служат основой для создания ловцов снов, абажуров, панно, вязания и других поделок в технике макраме и скрапбукинга.</p>
-
-        <p><strong>Можно ли покрасить кольца?</strong><br>
-        Да! Березовая фанера отлично принимает акриловые краски, лаки и другие отделочные материалы.</p>
-
-        <p><strong>Есть ли гарантия качества?</strong><br>
-        Да, мы проверяем каждое кольцо перед отправкой. Если вы получили брак — вернем деньги или заменим товар.</p>
+        <p>Примеры использования вы найдете на странице товара.</p>
     </section>
 
 </div>
 
 <footer>
     <p>© 2025 Деревянные кольца для творчества. Все права защищены.</p>
-    <p>📩 example@email.com | 📱 WhatsApp: +7 (XXX) XXX-XX-XX</p>
 </footer>
 
 </body>
