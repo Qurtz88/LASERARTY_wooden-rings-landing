@@ -8,7 +8,7 @@
     <title>Деревянные кольца для макраме и ловцов снов — набор 12 штук</title>
 
     <!-- SEO: Мета-описание -->
-    <meta name="description" content="Набор деревянных колец для макраме, ловцов снов и рукоделия. Универсальный набор из 12 штук разного диаметра. Экологичная березовая фанера. Подходит для творчества и декора. Купить онлайн.">
+    <meta name="description" content="Набор деревянных колец разного диаметра (от 59 мм до 235 мм). Изготовлены из экологичной березовой фанеры. Подходят для макраме, вязания, создания абажуров и ловцов снов. Купить онлайн.">
 
     <!-- SEO: Ключевые слова -->
     <meta name="keywords" content="деревянные кольца, макраме, ловцы снов, кольца для рукоделия, набор для творчества, экологичные материалы для рукоделия">
@@ -19,6 +19,30 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ваш-сайт.netlify.app"> 
     <meta property="og:image" content="images/eco-material.jpg">
+
+    <!-- Rich Snippets / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org", 
+      "@type": "Product",
+      "name": "Деревянные кольца для макраме и ловцов снов",
+      "image": [
+        "https://ваш-сайт.netlify.app/images/Kol'ca  dlya rukodeliya 12 shtuk.webp"
+      ],
+      "description": "Набор деревянных колец разного диаметра (от 59 мм до 235 мм). Изготовлены из березовой фанеры. Подходят для макраме, вязания, создания абажуров и ловцов снов.",
+      "brand": {
+        "@type": "Brand",
+        "name": "LASERARTY"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://ваш-сайт.netlify.app", 
+        "priceCurrency": "RUB",
+        "price": "296",
+        "availability": "https://schema.org/InStock" 
+      }
+    }
+    </script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
@@ -104,10 +128,10 @@
             font-size: 0.9em;
         }
 
-        /* Галерея с 5 фото в ряд */
+        /* Галерея с 4 фото в ряд */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 15px;
         }
 
@@ -116,6 +140,7 @@
             height: auto;
             border-radius: 8px;
             object-fit: cover;
+            loading: lazy;
         }
 
         a.button {
@@ -193,20 +218,17 @@
     <section id="gallery">
         <h2>🖼️ Фото товаров</h2>
         <div class="gallery">
-            <a href="images/Kol'ca dlya rukodeliya 36 shtuk.webp" data-lightbox="gallery" data-title="Кольца в руках">
-                <img src="images/Kol'ca dlya rukodeliya 36 shtuk.webp" alt="Кольца в руках">
+            <a href="images/Kol'ca dlya rukodeliya 12 shtuk.webp" data-lightbox="gallery" data-title="Кольца в руках">
+                <img src="images/Kol'ca dlya rukodeliya 12 shtuk.webp" alt="Кольца в руках" width="200" height="200" loading="lazy">
             </a>
             <a href="images/Kol'ca dlya rukodeliya 23sm eko.webp" data-lightbox="gallery" data-title="Эко материал">
-                <img src="images/Kol'ca dlya rukodeliya 23sm eko.webp" alt="Эко материал">
+                <img src="images/Kol'ca dlya rukodeliya 23sm eko.webp" alt="Эко материал" width="200" height="200" loading="lazy">
             </a>
             <a href="images/Kol'ca dlya rukodeliya 23sm raboty pokupatelej.webp" data-lightbox="gallery" data-title="Работы покупателей">
-                <img src="images/Kol'ca dlya rukodeliya 23sm raboty pokupatelej.webp" alt="Работы покупателей">
+                <img src="images/Kol'ca dlya rukodeliya 23sm raboty pokupatelej.webp" alt="Работы покупателей" width="200" height="200" loading="lazy">
             </a>
             <a href="images/Kol'ca dlya rukodeliya 23sm razmer.webp" data-lightbox="gallery" data-title="Размер колец">
-                <img src="images/Kol'ca dlya rukodeliya 23sm razmer.webp" alt="Размер колец">
-            </a>
-            <a href="images/Kol'ca dlya rukodeliya 23sm sozdavajte vmeste s nami.webp" data-lightbox="gallery" data-title="Технические характеристики">
-                <img src="images/Kol'ca dlya rukodeliya 23sm sozdavajte vmeste s nami.webp" alt="Технические характеристики">
+                <img src="images/Kol'ca dlya rukodeliya 23sm razmer.webp" alt="Размер колец" width="200" height="200" loading="lazy">
             </a>
         </div>
     </section>
@@ -233,8 +255,8 @@
 </div>
 
 <footer>
-    <p>© 2025 LASERARTY</p>
-    <p>📩 laserarty@mail.ru | 📱 WhatsApp: +7 (XXX) XXX-XX-XX</p>
+    <p>© 2025 LASERARTY. Все права защищены.</p>
+    <p>📩 info@laserarty.com | 📱 WhatsApp: +7 (XXX) XXX-XX-XX</p>
 </footer>
 
 <!-- Lightbox JS -->
