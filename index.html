@@ -18,7 +18,7 @@
     <meta property="og:description" content="Универсальный набор деревянных колец для создания ловцов снов, абажуров, панно и других изделий в технике макраме.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ваш-сайт.netlify.app"> 
-    <meta property="og:image" content="images/eco-material.jpg">
+    <meta property="og:image" content="images/Kol'ca dlya rukodeliya 12 shtuk.webp">
 
     <!-- Rich Snippets / Schema.org -->
     <script type="application/ld+json">
@@ -26,14 +26,9 @@
       "@context": "https://schema.org", 
       "@type": "Product",
       "name": "Деревянные кольца для макраме и ловцов снов",
-      "image": [
-        "https://ваш-сайт.netlify.app/images/Kol'ca  dlya rukodeliya 12 shtuk.webp"
-      ],
-      "description": "Набор деревянных колец разного диаметра (от 59 мм до 235 мм). Изготовлены из березовой фанеры. Подходят для макраме, вязания, создания абажуров и ловцов снов.",
-      "brand": {
-        "@type": "Brand",
-        "name": "LASERARTY"
-      },
+      "image": ["https://ваш-сайт.netlify.app/images/Kol'ca  dlya rukodeliya 12 shtuk.webp"],
+      "description": "Набор деревянных колец разных размеров для творчества. Подходит для макраме, вязания, создания абажуров и ловцов снов. Экологичная березовая фанера. Надежное качество.",
+      "brand": {"@type": "Brand", "name": "LASERARTY"},
       "offers": {
         "@type": "Offer",
         "url": "https://ваш-сайт.netlify.app", 
@@ -68,51 +63,71 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/XXXXXX" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
+    <!-- Шрифт Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
     <!-- Lightbox CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        :root {
+            --main-bg: #f5f0fa; 
+            --main-text: #3d2b4f;
+            --accent: #8e44ad;
+            --accent-light: #cdacda;
+            --accent-dark: #732e8d;
+        }
+
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-color: #f5f0fa; 
-            color: #333;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--main-bg);
+            color: var(--main-text);
+            line-height: 1.6;
+            padding: 0 10px;
         }
 
         header {
-            background-color: #8e44ad;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
 
         nav {
-            background-color: #cdacda;
+            background-color: var(--accent-light);
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 20px;
             padding: 10px;
         }
 
         nav a {
-            color: #5b2c6f;
+            color: var(--accent-dark);
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         h2 {
-            color: #8e44ad;
+            color: var(--accent);
+            border-left: 4px solid var(--accent);
+            padding-left: 10px;
         }
 
         ul {
@@ -120,47 +135,57 @@
             padding-left: 20px;
         }
 
-        footer {
-            background-color: #8e44ad;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
-        }
-
-        /* Галерея с 4 фото в ряд */
+        /* Галерея */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
+            gap: 20px;
         }
 
         .gallery img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
-            object-fit: cover;
-            loading: lazy;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         a.button {
             display: inline-block;
-            background-color: #8e44ad;
+            background-color: var(--accent);
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
         }
 
         a.button:hover {
-            background-color: #732e8d;
+            background-color: var(--accent-dark);
+        }
+
+        footer {
+            background-color: var(--accent);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
         }
 
         @media (max-width: 600px) {
             nav {
                 flex-direction: column;
-                gap: 10px;
+                align-items: center;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
             }
         }
     </style>
@@ -169,66 +194,66 @@
 
 <header>
     <h1>Деревянные кольца для макраме и ловцов снов</h1>
-    <p>Набор из 12 штук разного диаметра — ваш идеальный помощник в творчестве</p>
+    <p>Набор из 12 штук разного диаметра — экологично и эстетично</p>
 </header>
 
 <nav>
     <a href="#product">О продукте</a>
-    <a href="#uses">Где использовать</a>
+    <a href="#uses">Применение</a>
     <a href="#advantages">Преимущества</a>
-    <a href="#gallery">Фото товаров</a>
-    <a href="#buy">Купить</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#buy">Купить сейчас</a>
     <a href="#faq">FAQ</a>
 </nav>
 
 <div class="container">
 
-    <section id="product">
+      <section id="product">
         <h2>📦 О продукте</h2>
         <p><strong>Набор из 12 деревянных колец</strong> разного диаметра (от 59 мм до 235 мм) — универсальная основа для ваших творческих проектов.</p>
         <ul>
-            <li><strong>Материал:</strong> березовая фанера сорта 2/2</li>
+            <li><strong>Материал:</strong> березовая фанера 4 мм сорта 2/2</li>
             <li><strong>Размеры:</strong> от 59 мм до 235 мм в диаметре</li>
             <li><strong>Ширина кольца:</strong> 8 мм</li>
             <li><strong>Количество:</strong> 12 штук в наборе</li>
         </ul>
     </section>
 
-    <section id="uses">
+<section id="uses">
         <h2>🎨 Где использовать?</h2>
         <ul>
-            <li><strong>💫 Макраме:</strong> создавайте стильные панно, абажуры и подвесные кашпо.</li>
-            <li><strong>🧵 Вязание:</strong> используйте кольца как основу для объёмного вязания.</li>
-            <li><strong>🕊️ Ловцы снов:</strong> сделайте уникальный оберег своими руками.</li>
-            <li><strong>🎉 Декор и подарки:</strong> украшайте интерьер, делайте открытки и авторские подарки.</li>
+            <li><strong> Макраме:</strong> создавайте стильные панно, абажуры и подвесные кашпо.</li>
+            <li><strong> Вязание:</strong> используйте кольца как основу для объёмного вязания.</li>
+            <li><strong> Ловцы снов:</strong> сделайте уникальный оберег своими руками.</li>
+            <li><strong> Декор и подарки:</strong> украшайте интерьер, делайте открытки и авторские подарки.</li>
         </ul>
     </section>
 
     <section id="advantages">
         <h2>🌟 Преимущества</h2>
         <ul>
-            <li>✔️ Экологичный материал — натуральное дерево</li>
-            <li>✔️ Прочный и долговечный</li>
-            <li>✔️ Подходит как для новичков, так и для опытных мастеров</li>
-            <li>✔️ Можно красить, покрывать лаком или украшать любыми материалами</li>
-            <li>✔️ Широкий выбор размеров — под любой проект</li>
+            <li> Экологичный материал — натуральное дерево</li>
+            <li> Прочный и долговечный</li>
+            <li> Подходит как для новичков, так и для опытных мастеров</li>
+            <li> Можно красить, покрывать лаком или украшать любыми материалами</li>
+            <li> Широкий выбор размеров — под любой проект</li>
         </ul>
     </section>
 
     <section id="gallery">
-        <h2>🖼️ Фото товаров</h2>
+        <h2>🖼️ Примеры использования</h2>
         <div class="gallery">
-            <a href="images/Kol'ca dlya rukodeliya 12 shtuk.webp" data-lightbox="gallery" data-title="Кольца в руках">
-                <img src="images/Kol'ca dlya rukodeliya 12 shtuk.webp" alt="Кольца в руках" width="200" height="200" loading="lazy">
+            <a href="images/Kol'ca dlya rukodeliya 12 shtuk.webp" data-lightbox="gallery">
+                <img src="images/Kol'ca dlya rukodeliya 12 shtuk.webp" alt="Кольца в руках" loading="lazy" width="200" height="200">
             </a>
-            <a href="images/Kol'ca dlya rukodeliya 23sm eko.webp" data-lightbox="gallery" data-title="Эко материал">
-                <img src="images/Kol'ca dlya rukodeliya 23sm eko.webp" alt="Эко материал" width="200" height="200" loading="lazy">
+            <a href="images/Kol'ca dlya rukodeliya 23sm eko.webp" data-lightbox="gallery">
+                <img src="images/Kol'ca dlya rukodeliya 23sm eko.webp" alt="Эко материал" loading="lazy" width="200" height="200">
             </a>
-            <a href="images/Kol'ca dlya rukodeliya 23sm raboty pokupatelej.webp" data-lightbox="gallery" data-title="Работы покупателей">
-                <img src="images/Kol'ca dlya rukodeliya 23sm raboty pokupatelej.webp" alt="Работы покупателей" width="200" height="200" loading="lazy">
+            <a href="images/Kol'ca dlya rukodeliya 23sm raboty pokupatelej.webp" data-lightbox="gallery">
+                <img src="images/Kol'ca dlya rukodeliya 23sm raboty pokupatelej.webp" alt="Работы покупателей" loading="lazy" width="200" height="200">
             </a>
-            <a href="images/Kol'ca dlya rukodeliya 23sm razmer.webp" data-lightbox="gallery" data-title="Размер колец">
-                <img src="images/Kol'ca dlya rukodeliya 23sm razmer.webp" alt="Размер колец" width="200" height="200" loading="lazy">
+            <a href="images/Kol'ca dlya rukodeliya 23sm razmer.webp" data-lightbox="gallery">
+                <img src="images/Kol'ca dlya rukodeliya 23sm razmer.webp" alt="Размер колец" loading="lazy" width="200" height="200">
             </a>
         </div>
     </section>
@@ -238,12 +263,13 @@
         <p><strong>Wildberries:</strong> 
             <a href="https://www.wildberries.ru/catalog/148131749/detail.aspx?targetUrl=MI" target="_blank">Перейти на страницу товара</a>
         </p>
-        <p>💰 Цена со скидкой: 296 ₽</p>
+        <p>💰 Цена со скидкой: 299 ₽</p>
         <p>📦 Артикул: 148131749</p>
-        <a href="https://www.wildberries.ru/catalog/148131749/detail.aspx?targetUrl=MI" target="_blank" class="button">Купить сейчас</a>
+        <br>
+        <a class="button" href="https://www.wildberries.ru/catalog/148131749/detail.aspx?targetUrl=MI" target="_blank">Купить сейчас</a>
     </section>
 
-    <section id="faq">
+   <section id="faq">
         <h2>❓ Часто задаваемые вопросы</h2>
         <p><strong>Можно ли покрасить кольца?</strong><br>
         Да! Берёзовая фанера отлично принимает акриловые краски, лаки и другие отделочные материалы.</p>
@@ -255,7 +281,7 @@
 </div>
 
 <footer>
-    <p>© 2025 LASERARTY</p>
+    <p>© 2025 LASERARTY — ваш помощник в творчестве</p>
     <p>📩 laserarty@mail.ru | 📱 WhatsApp: +7 (XXX) XXX-XX-XX</p>
 </footer>
 
