@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wooden-rings-landing.netlify.app/sitemap.xml 
