@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Деревянные кольца для макраме и ловцов снов — набор 12 штук</title>
+  <meta name="description" content="Набор деревянных колец разного диаметра (от 59 мм до 235 мм) из экологичной берёзовой фанеры. Для макраме, ловцов снов, декора.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Google-font + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4/fonts/remixicon.css" rel="stylesheet">
+  <!-- Lightbox -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --main-bg:#f5f0fa;
+      --main-text:#3d2b4f;
+      --accent:#8e44ad;
+      --accent-dark:#732e8d;
+      --glass-bg:rgba(255,255,255,.15);
+      --footer-height:64px;
+    }
+    /* Тёмная тема */
+    @media (prefers-color-scheme:dark){
+      :root{
+        --main-bg:#1e1a24;
+        --main-text:#f5f0fa;
+        --accent:#b085d6;
+        --glass-bg:rgba(255,255,255,.08);
+      }
+    }
+    body.dark{ --main-bg:#1e1a24; --main-text:#f5f0fa; --accent:#b085d6; --glass-bg:rgba(255,255,255,.08); }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Montserrat',sans-serif;
+      background:var(--main-bg);
+      color:var(--main-text);
+      line-height:1.6;
+      transition:background .3s,color .3s;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+    header{
+      background:linear-gradient(135deg,var(--accent),var(--accent-dark));
+      color:#fff;
+      padding:60px 20px 40px;
+      text-align:center;
+      position:relative;
+    }
+    nav{
+      background:var(--glass-bg);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(255,255,255,.18);
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:10px;
+      padding:12px;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    nav a{
+      padding:8px 18px;
+      border-radius:50px;
+      color:var(--accent-dark);
+      font-weight:600;
+      text-decoration:none;
+      transition:.3s;
+    }
+    nav a:hover{background:var(--accent);color:#fff}
+    .container{
+      max-width:1000px;margin:auto;padding:40px 20px;flex:1;
+    }
+    .card{
+      background:var(--glass-bg);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:20px;
+      padding:30px;
+      margin-bottom:30px;
+      animation:fadeUp .8s ease-out both;
+    }
+    .card:nth-child(even){animation-delay:.2s}
+    h2{display:flex;align-items:center;gap:10px;margin-bottom:14px;color:var(--accent)}
+    ul{list-style:none;padding-left:0}
+    ul li{margin-bottom:8px;display:flex;align-items:center;gap:8px}
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+      gap:20px;
+    }
+    .gallery img{
+      width:100%;border-radius:16px;
+      transition:transform .4s cubic-bezier(.4,0,.2,1);
+    }
+    .gallery img:hover{transform:scale(1.08)}
+    .benefits{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+    .benefit{
+      background:var(--glass-bg);
+      border-radius:16px;
+      padding:20px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .button{
+      display:inline-block;
+      background:var(--accent);
+      color:#fff;
+      padding:14px 28px;
+      border-radius:50px;
+      font-weight:600;
+      text-decoration:none;
+      transition:background .3s;
+    }
+    .button:hover{background:var(--accent-dark)}
+    .sticky-buy{
+      position:fixed;
+      bottom:calc(var(--footer-height) + 12px);
+      right:20px;
+      z-index:99;
+      box-shadow:0 4px 14px rgba(0,0,0,.25);
+    }
+    .faq-float{
+      position:fixed;
+      bottom:calc(var(--footer-height) + 12px);
+      left:20px;
+      background:var(--accent);
+      color:#fff;
+      padding:12px 20px;
+      border-radius:50px;
+      cursor:pointer;
+      box-shadow:0 4px 14px rgba(0,0,0,.15);
+    }
+    footer{
+      background:var(--accent);
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      font-size:.9em;
+      height:var(--footer-height);
+    }
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+    #themeToggle{
+      position:absolute;
+      top:20px;
+      right:20px;
+      background:rgba(255,255,255,.2);
+      border:none;
+      border-radius:50%;
+      width:40px;height:40px;
+      font-size:20px;
+      cursor:pointer;
+      transition:.3s;
+    }
+    #themeToggle:hover{background:rgba(255,255,255,.3)}
+    @media(max-width:600px){
+      nav{flex-direction:column}
+      .gallery{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button id="themeToggle" aria-label="Сменить тему">🌙</button>
+    <h1>Деревянные кольца для макраме и ловцов снов</h1>
+    <p>Набор из 12 штук разного диаметра — экологично и эстетично</p>
+  </header>
+
+  <nav>
+    <a href="#product">О продукте</a>
+    <a href="#uses">Применение</a>
+    <a href="#advantages">Преимущества</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#buy">Купить</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <div class="container">
+    <section id="product" class="card">
+      <h2><i class="ri-box-3-line"></i> О продукте</h2>
+      <p><strong>12 деревянных колец</strong> диаметром 59–235 мм из берёзовой фанеры 4 мм. Идеальная основа для творчества.</p>
+      <ul>
+        <li><i class="ri-leaf-fill"></i> Экологичная берёзовая фанера</li>
+        <li><i class="ri-ruler-line"></i> 12 разных размеров в одном наборе</li>
+        <li><i class="ri-palette-line"></i> Легко красить, лакировать, декорировать</li>
+      </ul>
+    </section>
+
+    <section id="uses" class="card">
+      <h2><i class="ri-artboard-2-line"></i> Где использовать?</h2>
+      <ul>
+        <li><i class="ri-macrame-line"></i> Макраме: панно, абажуры, кашпо</li>
+        <li><i class="ri-scissors-cut-line"></i> Вязание: объёмные работы</li>
+        <li><i class="ri-moon-foggy-line"></i> Ловцы снов и амулеты</li>
+        <li><i class="ri-gift-line"></i> Подарки и декор интерьера</li>
+      </ul>
+    </section>
+
+    <section id="advantages" class="card">
+      <h2><i class="ri-star-smile-line"></i> Преимущества</h2>
+      <div class="benefits">
+        <div class="benefit"><i class="ri-leaf-fill"></i> Натуральное дерево</div>
+        <div class="benefit"><i class="ri-shield-check-line"></i> Прочные и долговечные</div>
+        <div class="benefit"><i class="ri-user-heart-line"></i> Подходят новичкам и профи</div>
+        <div class="benefit"><i class="ri-palette-line"></i> Любые отделки</div>
+      </div>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2><i class="ri-image-line"></i> Примеры работ</h2>
+      <div class="gallery">
+        <a href="images/Kol'ca dlya rukodeliya 12 shtuk.webp" data-lightbox="gallery">
+          <img src="images/Kol'ca dlya rukodeliya 12 shtuk.webp" alt="Кольца в руках" loading="lazy">
+        </a>
+        <a href="images/Kol'ca dlya rukodeliya 23sm eko.webp" data-lightbox="gallery">
+          <img src="images/Kol'ca dlya rukodeliya 23sm eko.webp" alt="Эко материал" loading="lazy">
+        </a>
+        <a href="images/Kol'ca dlya rukodeliya 23sm raboty pokupatelej.webp" data-lightbox="gallery">
+          <img src="images/Kol'ca dlya rukodeliya 23sm raboty pokupatelej.webp" alt="Работы покупателей" loading="lazy">
+        </a>
+        <a href="images/Kol'ca dlya rukodeliya 23sm razmer.webp" data-lightbox="gallery">
+          <img src="images/Kol'ca dlya rukodeliya 23sm razmer.webp" alt="Размер" loading="lazy">
+        </a>
+      </div>
+    </section>
+
+    <section id="buy" class="card">
+      <h2><i class="ri-shopping-bag-3-line"></i> Где купить?</h2>
+      <p><strong>Wildberries:</strong> <a class="button" href="https://www.wildberries.ru/catalog/148131749/detail.aspx?targetUrl=MI" target="_blank">Перейти к товару</a></p>
+      <p>💰 Цена со скидкой: 299 ₽</p>
+      <p>📦 Артикул: 148131749</p>
+    </section>
+
+    <section id="faq" class="card">
+      <h2><i class="ri-question-line"></i> FAQ</h2>
+      <p><strong>Можно ли покрасить кольца?</strong><br>Да! Хорошо держат акрил, лак, морилку и даже пирографию.</p>
+      <p><strong>Качество проверено?</strong><br>Каждое кольцо проходит контроль. Проверьте товар при получении.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 LASERARTY — ваш помощник в творчестве</p>
+    <p><i class="ri-mail-line"></i> laserarty@mail.ru | <i class="ri-whatsapp-line"></i> +7 XXX XXX-XX-XX</p>
+  </footer>
+
+  <!-- Sticky elements -->
+  <a class="button sticky-buy" href="#buy">💜 Купить 299 ₽</a>
+  <div class="faq-float" onclick="document.getElementById('faq').scrollIntoView()">❓ FAQ</div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+    /* Переключатель темы */
+    const btn = document.getElementById('themeToggle');
+    btn.onclick = () => {
+      document.body.classList.toggle('dark');
+      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    };
+  </script>
+</body>
+</html>
